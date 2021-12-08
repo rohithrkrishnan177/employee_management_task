@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 2</title>
+</head>
+<body>
+<center style="background-color: #1c87c9;padding : 50px;"><form method="post">
+     {% csrf_token %}
+
+  <label>Enter Number:</label>
+  <input type="number" min="0" value={{form.Number}}><br>
+    <button type="submit" class="btn btn-success btn-block btn-lg">Submit</button>
+    <p>{{word}}</p>
+</form></center>
+</body>
+</html>

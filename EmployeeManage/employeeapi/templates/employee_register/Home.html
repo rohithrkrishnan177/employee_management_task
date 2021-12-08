@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Employe Management </title>
+    {% load static %}
+
+</head>
+<body>
+<!--- <div style="background-image: url({% static 'images/cover.jpg' %});">
+     <img src="{% static '/backgroundimage/gh.png' %}" alt="home" /> -->
+
+     <div style="height:100vh; background-repeat: no-repeat;background-size: cover;  background-image: url({% static '/backgroundimage/seo-company-in-delhi.jpg' %});">
+         <center style="background:rgba(0,0,0,0.5);padding : 50px;">
+             <h1 style="color:white;   ">My Task Company</h1>
+             <br><br> <a  href="{% url 'register_request' %}" class="btn btn-secondary btn-block btn-lg"><h3 style="color:white ">Register</h3></a>
+               <div class="col-md-4">
+                  <a href="{% url 'login_request' %}" class="btn btn-secondary btn-block btn-lg">
+                    <i class="fas fa-stream"></i> <h3 style="color:white ">EMPLOYEE LOGIN</h3></a>
+               </div>
+
+         </center>
+     </div>
+</div>
+</body>
+</html>
+
+
